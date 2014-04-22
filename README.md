@@ -1,4 +1,4 @@
-portland
-========
+Portland
+======
 
 Portland Ecommerce Template
