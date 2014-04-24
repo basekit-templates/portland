@@ -1,7 +1,7 @@
 {
-    "name":"Frames Fashion",
-    "thumbnail":"frames.png",
-    "screenshot":"frames.png",
+    "name":"Portland",
+    "thumbnail":"portland.png",
+    "screenshot":"portland.png",
     "pageTypes": ["default", "home", "ecomproductlist", "ecomproduct", "ecomcheckout"],
     "tags": {
     "en": ["clean", "menu", "ecommerce", "shop"],
@@ -12,7 +12,7 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#0a7d99",
+            "color2":"#ffffff",
             "color3":"#302f43",
             "color4":"#302f43",
             "color5":"#7a7a7e",
@@ -22,38 +22,38 @@
         "Swatch 2": {
             "color1":"#ffffff",
             "color2":"#ffffff",
-            "color3":"#5f90a5",
-            "color4":"#2b6c87",
-            "color5":"#666d6f",
-            "color6":"#ffffff",
-            "color7":"#666d6f"
+            "color3":"#ff6347",
+            "color4":"#282828",
+            "color5":"#9b9b9b",
+            "color6":"#302f43",
+            "color7":"#ebebeb"
         },
         "Swatch 3": {
             "color1":"#ffffff",
             "color2":"#ffffff",
-            "color3":"#558179",
-            "color4":"#1e3631",
-            "color5":"#465853",
-            "color6":"#ffffff",
-            "color7":"#1e3631"
+            "color3":"#e7cba7",
+            "color4":"#282828",
+            "color5":"#9b9b9b",
+            "color6":"#302f43",
+            "color7":"#ebebeb"
         },
         "Swatch 4": {
             "color1":"#ffffff",
             "color2":"#ffffff",
-            "color3":"#898794",
-            "color4":"#555167",
-            "color5":"#58525a",
+            "color3":"#79aeaf",
+            "color4":"#282828",
+            "color5":"#9b9b9b",
             "color6":"#ffffff",
-            "color7":"#55525a"
+            "color7":"#ebebeb"
         },
         "Swatch 5": {
             "color1":"#ffffff",
             "color2":"#ffffff",
-            "color3":"#78b0b8",
-            "color4":"#46858e",
-            "color5":"#000000",
+            "color3":"#ff9e29",
+            "color4":"#302f43",
+            "color5":"#7a7a7e",
             "color6":"#ffffff",
-            "color7":"#46858e"
+            "color7":"#ebebeb"
         }
     },
     "fontSwatch": {
@@ -76,7 +76,7 @@
         },
         "font3": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "16px",
+            "font-size": "18px",
             "font-weight": "400",
             "line-height": "28px",
             "color": "darken(@color-swatch4,10%)",

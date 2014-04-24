@@ -23,27 +23,27 @@
         <div class="col-100">
             {{widget('feature', 'featureimage', {"header": "New Collection for 2014", "strapline":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan dolec ipsum dolor.", "buttonText":"Click here","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
         </div><!--end col-100-->
-        <div class="col-30">
+        <!--<div class="col-30">
             {{widget('image', 'featureimage1', { 'src': asset('/images/sub-feature1.jpg'), 'alt': 'my image', 'fileName': 'my-image.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '90px'})|raw}}
             <div class="sub-feature">
                 {{widget('content', 'contenthead1', {content: '<h4>Lorum Ipsum</h4>', lines: 'all'})|raw}}
                 {{widget('content', 'featurecontent1', {content: 'This is a content widget.', lines: 'all'})|raw}}
             </div>
-        </div><!--end col-30-->
+        </div>
         <div class="col-30">
             {{widget('image', 'featureimage2', { 'src': asset('/images/sub-feature2.jpg'), 'alt': 'my image', 'fileName': 'my-image.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '90px'})|raw}}
             <div class="sub-feature">
                 {{widget('content', 'contenthead2', {content: '<h4>Lorum Ipsum</h4>', lines: 'all'})|raw}}
                 {{widget('content', 'featurecontent2', {content: 'This is a content widget.', lines: 'all'})|raw}}
             </div>
-        </div><!--end col-30-->
+        </div>
         <div class="col-30">
             {{widget('image', 'featureimage3', { 'src': asset('/images/sub-feature3.jpg'), 'alt': 'my image', 'fileName': 'my-image.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '90px'})|raw}}
             <div class="sub-feature">
                 {{widget('content', 'contenthead3', {content: '<h4>Lorum Ipsum</h4>', lines: 'all'})|raw}}
                 {{widget('content', 'featurecontent3', {content: 'This is a content widget.', lines: 'all'})|raw}}
             </div>
-        </div><!--end col-30-->
+        </div>-->
     </div><!--end grid-->
 </div><!--end container-->
 
@@ -52,6 +52,7 @@
         <div class="grid">
             <div class="col-100">
                 {{widget('ecomproductslist', 'ecomproductslist', {})|raw}}
+                {{zone('main')|raw}}
             </div><!--end 100-->
         </div><!--end grid-->
     </div><!--end container-->
