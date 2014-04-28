@@ -1,0 +1,16 @@
+<footer class="bk-footer">
+    <div class="container">
+        <div class="grid">
+            <div class="col-30">
+                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
+            </div><!--end col-30-->
+            <div class="col-30">
+                {{widget('companyname', 'companyname-footer', {"business": "profile"})|raw}}
+                {{widget('companyaddress', 'address', {})|raw}}
+            </div><!--end col-30-->
+            <div class="col-30">
+                {{widget('signupform', 'signup', {'text': 'Send', 'label': 'Your Email', 'formTitle': '', 'email': 'profile'})|raw}}
+            </div><!--end col-30-->
+        </div><!--end grid-->
+    </div><!--end container-->
+</footer>

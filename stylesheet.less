@@ -1,6 +1,6 @@
 /* 
 
-1. Common
+1. Imports & Includes
 2. Grid
 3. Header
 4. Navigation
@@ -15,15 +15,11 @@
 13. Misc
 */
 
+/* Imports & Includes */
+
 @import "@{templateCommon}/basekit-bootstrap.less";
 @tablet: ~"only screen and (max-width: 860px)";
 @mobile: ~"only screen and (max-width: 650px)";
-
-/* Common */
-
-body {
-  background-color: @color-swatch1;
-}
 
 /* Grid */
 
@@ -51,7 +47,7 @@ body {
         .col-50 { width: 47%; }
         .col-30 { width: 30.36%; }
         .col-20 { width: 17.07%; }
-        .col-15 { width: 14.5%; }
+        .col-15 { width: 13.5%; }
         .col-10 { width: 8.56%; }
     }
     
@@ -70,7 +66,7 @@ body {
 /* Header */
 
 .bk-header {
-    padding: 50px 0 25px;
+    padding: 50px 0 35px;
     @media @tablet {
         padding-top: 30px;
     }
@@ -131,6 +127,7 @@ body {
         padding: 20px 0 10px;
         @media @tablet {
             display: block;
+            float: none;
             padding: 0;
         }
         ul {
@@ -673,6 +670,9 @@ div[role="main"] {
             height: 45px;
             top: -1px;
             position: relative;
+        }
+        input {
+            border: 2px solid fade(@color-swatch5, 25%);
         }
     }
     &.blogsearch {
