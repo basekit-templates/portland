@@ -68,7 +68,7 @@
         },
         "font2": {
             "font-family": "\"Times New Roman\", serif",
-            "font-size": "22px",
+            "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "26px",
             "color": "@color-swatch4",
@@ -76,7 +76,7 @@
         },
         "font3": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "18px",
+            "font-size": "21px",
             "font-weight": "400",
             "line-height": "28px",
             "color": "darken(@color-swatch4,10%)",
