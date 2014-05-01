@@ -118,6 +118,17 @@
     display: inline-block;
 }
 
+body.edit { /* border for logo on editor */
+    .widget {
+        &.logo {
+            img {
+                border: 1px dashed red;
+                margin: 0 0 2px;
+            }
+        }
+    }
+}
+
 /* Navigation */
 
 .widget {
@@ -311,8 +322,6 @@
             .content {
                 padding: 60px 0;
                 .spare {
-                    margin: 0px auto;
-                    display: table;
                     @media @tablet {
                         padding: 0 30px;
                     }
@@ -338,11 +347,10 @@
             button.btn {
                 background-color: @color-swatch1;
                 color: @color-swatch4;
-                margin-bottom: 0;
-                margin: 0px auto;
-                display: table;
+                display: block;
+                margin: 15px auto 0;
                 &:hover {
-                    background-color: fade(@color-swatch1, 65%);
+                    background-color: fade(@color-swatch1, 35%);
                 }
             }
         }
@@ -368,7 +376,7 @@
 }
 
 .widget.feature .feature-bgimg .content {
-    background-color:rgba(0,0,0,0.1);
+    background-color: fade(@color-swatch4, 15%);
 }
 
 /* Ecommerce Product List */
@@ -662,6 +670,56 @@
 
 div[role="main"] {
     padding: 20px 0;
+}
+
+/* Blog */
+
+.blogpost, .blog-post-list {
+    .blog-post-feature-image-wrap {
+        line-height: 0;
+        background-size: cover;
+        background-position: center;
+        margin: 20px 0 25px;
+        width: auto;
+        img {
+            display: none;
+        }
+    }
+}
+
+.blog-post-list .blog-post-feature-image-wrap {
+    height: 250px;
+}
+
+.blogpost .blog-post-feature-image-wrap {
+    height: 350px;
+}
+
+/* Menu */
+
+.menu {
+    .menu-item-image-wrap {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180px;
+        margin: 0.25em 0 0.75em;
+        background-position: center;
+        img {
+            display: none;
+        }
+    }
+    .menu-item-nutritional-title {
+        font-size: @font-swatch5-font-size;
+    }
+    .menu-section-item-dietary-props .dietary-icon {
+        border: 1px solid darken(@color-swatch7, 5%);
+        font-size: bkscale(@font-swatch5-font-size, 0.9);
+        padding: 2px 5px;
+    }
+    .menu-subsection-promoted, .menu-items li.menu-item-promoted {
+        background-color: lighten(@color-swatch7, 5%);
+        padding: 3em;
+    }
 }
 
 /* Footer */

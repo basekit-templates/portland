@@ -2,6 +2,7 @@
     <div class="container">
         <div class="grid">
             <div class="col-30">
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
                 {{widget('companyname', 'companyname-header', {"business": "profile"})|raw}}
             </div><!--end col-30-->
             <nav class="col-50">
