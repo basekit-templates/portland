@@ -97,10 +97,18 @@
     }
     .widget.companyname {
         padding-top: 12px;
+        @media @mobile {
+            width: 100%;
+        }
         a {
             @media @tablet {
                 font-size: bkscale(@font-swatch10-font-size, 0.9);
                 padding-right: 30px;
+            }
+            @media @mobile {
+                padding: 0;
+                display: block;
+                text-align: center;
             }
         }
     }
@@ -122,6 +130,13 @@
 
 .widget.logo, .widget.companyname {
     display: inline-block;
+}
+
+.widget.logo {
+    @media @mobile {
+        display: block;
+        text-align: center;
+    }
 }
 
 body.edit {
@@ -201,6 +216,9 @@ body.edit {
                 left: auto;
                 right: 0;
                 top: -30px;
+            }
+            @media @mobile {
+                top: -90px;
             }
         }
     }
