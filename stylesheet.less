@@ -83,13 +83,15 @@
             }
         }
         .col-50 {
+            width: 50%;
             @media screen and (max-width: 1100px) {
-                width: 52%;
+                width: 58%;
             }
         }
         .col-15 {
+            width: 10.5%;
             @media screen and (max-width: 1100px) {
-                width: 18.75%;
+                width: 12.5%;
             }
         }
     }
@@ -139,7 +141,7 @@ body.edit {
     &.extendednavigation {
         display: inline-block;
         float: right;
-        padding: 20px 0 10px;
+        padding: 12px 0 0;
         @media @tablet {
             display: block;
             float: none;
@@ -157,9 +159,6 @@ body.edit {
             li {
                 @media @tablet {
                     border-bottom: 1px solid @color-swatch7;
-                }
-                &:first-child a {
-                    padding-left: 0;
                 }
                 a, span.text {
                     @media @tablet {
