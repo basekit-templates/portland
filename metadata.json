@@ -3,7 +3,7 @@
     "thumbnail":"portland.png",
     "screenshot":"portland.png",
     "templateType":"ecommerce",
-    "pageTypes": ["default", "home", "ecomcheckout"],
+    
     "tags": {
     "en": ["clean", "menu", "ecommerce", "shop"],
     "es": ["limpio", "menú", "ecommerce", "tienda"],
