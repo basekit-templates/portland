@@ -401,9 +401,6 @@ body.edit {
             padding: 12px 0 10px;
             margin: 10px 0 15px;
             display: inline-block;
-            float: right;
-            text-align: right;
-            width: 65%;
             @media @tablet {
                 display: block;
                 margin-left: 0;
@@ -448,10 +445,6 @@ body.edit {
                         display: block;
                         margin-bottom: 5px;
                     }
-                    &:after {
-                        content:":";
-                        position: relative;
-                    }
                 }
             }
             select {
@@ -459,7 +452,7 @@ body.edit {
                 border: 0;
                 -webkit-border-radius: 0;
                 border-radius: 0;
-                height: 32px;
+                height: 40px;
                 -webkit-appearance: none;
                 border: 1px solid lighten(@color-swatch5, 30%);
                 padding: 4px 35px 4px 12px;
@@ -468,6 +461,12 @@ body.edit {
                 background: image('/images/arrow-dropdown.png') 95% center no-repeat, linear-gradient(to bottom, white);
                 @media @tablet {
                     width: 97%;
+                }
+            }
+            .productlist-search {
+                input {
+                    border: 1px solid lighten(@color-swatch5, 30%);
+                    height: 40px;
                 }
             }
         }
