@@ -1,4 +1,4 @@
 Portland
-======
+========
 
-Portland Ecommerce Template
+Portland Ecommerce Theme
