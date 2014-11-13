@@ -883,20 +883,27 @@
 
 /* Ecommerce Featured Products */
 .widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-info {
-    border-top: 1px solid @color-swatch3;
+    border-top:  1px solid fade(@color-swatch3,50%);
     padding: 20px 10px 15px 10px;
     text-align: center;
 }
 
 .widget.ecomproductslist .ecom-productslist-product .ecom-productlist-info {
     text-align: center;
-    border-top: 1px solid @color-swatch3;
+    border-top:  1px solid fade(@color-swatch3,50%);
     padding: 0px 10px 25px 10px;
 }
 
 .widget.ecomproductslist .ecom-productslist-product, .widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-product {
-    padding-top:40px;
-    border: 1px solid @color-swatch3;
+    border: 1px solid fade(@color-swatch3,50%);
+    .ecom-productslist-image-wrap, .ecom-featuredproducts-image-wrap {
+        border: 15px solid @color-swatch1;
+        .ecom-productslist-image, .ecom-featuredproducts-image {
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }
 
 .widget.ecomfeaturedproducts .ecom-featuredproducts-header {
