@@ -99,7 +99,6 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    
     @media @tablet {
         display: block;
     }
@@ -119,14 +118,39 @@
         -ms-flex-item-align: auto;
         align-self: auto;
     }
-    .flex-1 {
-        
-    }
-    .flex-2 {
-       
-    }
     .flex-3 {
        min-width: 140px;
+    }
+    @media @mobile {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        .flex-1 {
+            -webkit-box-ordinal-group: 3;
+            -moz-box-ordinal-group: 3;
+            -webkit-order: 2;
+            -ms-flex-order: 2;
+            order: 2;
+            margin: 3em 0;
+        }
+        .flex-2 {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            min-height: 45px;
+            width: 100%;
+        }
+        .flex-3 {
+            -webkit-box-ordinal-group: 4;
+            -moz-box-ordinal-group: 4;
+            -webkit-order: 3;
+            -ms-flex-order: 3;
+            order: 3;
+            width: 100%;
+        }
     }
 }
 
@@ -140,6 +164,9 @@
     padding: 50px 0 35px;
     @media @tablet {
         padding-top: 30px;
+    }
+    @media @mobile {
+        padding-top: 0;
     }
     .widget.companyname {
         .companyname-wrap {
@@ -196,12 +223,10 @@
         display: block;
         ul {
             @media @tablet {
-                padding: 20px 0;
-            } 
-        }
-        ul {
-            @media @tablet {
-                padding-top: 20px;
+                padding-top: 20px 0;
+            }
+            @media @mobile {
+                padding-top: 45px;
             }
             li {
                 padding: 0;
@@ -250,8 +275,20 @@
                 right: 0;
                 top: -30px;
             }
-            @media @mobile {
-                top: -90px;
+        }
+        @media @mobile {
+            a.pull {
+                top: 0;
+                width: 100%;
+                background: @color-swatch3;
+                &:after {
+                    left: auto;
+                    right: 50%;
+                    margin-right: -13px;
+                    top: 14px;
+                    background: @color-swatch1;
+                    box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
+                }
             }
         }
     }
@@ -265,6 +302,9 @@
     @media screen and (max-width: 860px) {
         float: left;
         margin: 25px 0 20px;
+    }
+    @media @mobile {
+        margin: 0;
     }
     .ecombasket-pull {
         background-color: @color-swatch3;
@@ -886,6 +926,10 @@
     border-top:  1px solid fade(@color-swatch3,50%);
     padding: 20px 10px 15px 10px;
     text-align: center;
+}
+
+.widget.ecomproductslist .ecom-productslist-product, .widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-product {
+    padding: 0 0;
 }
 
 .widget.ecomproductslist .ecom-productslist-product .ecom-productlist-info {
