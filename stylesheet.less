@@ -1144,6 +1144,10 @@ a.blog-back-home {
     }
     .widget.signupform {
         min-width: 300px;
+        @media @mobile {
+            min-width: 100%;
+            width: 100%;
+        }
         .form-group {
             text-align: right;
             @media @tablet {
@@ -1162,6 +1166,9 @@ a.blog-back-home {
                 }
                 @media @tablet {
                     width: 65%;
+                }
+                @media @mobile {
+                    text-align: center;
                 }
             }
             button {
