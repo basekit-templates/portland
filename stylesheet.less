@@ -294,6 +294,21 @@
     }
 }
 
+/* Fix nav overlay on editor */
+
+.widget.extendednavigation .bk-overlay {
+    @media @tablet {
+        top: -40px !important;
+    }
+    @media @mobile {
+        width: 100%;
+        height: 40px;
+        top: 0 !important;
+    }
+}
+
+
+
 /* Ecommerce Basket */
   
 .widget.ecombasket {
