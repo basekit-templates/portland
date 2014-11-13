@@ -4,6 +4,9 @@
     "screenshot":"portland.png",
     "templateType":"ecommerce",
     "pageTypes": ["home"],
+    "images":[
+        "images/feature-bg.jpg"
+    ],
     "tags": {
     "en": ["clean", "menu", "ecommerce", "shop"],
     "es": ["limpio", "menú", "ecommerce", "tienda"],
