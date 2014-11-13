@@ -121,39 +121,43 @@
     .flex-3 {
        min-width: 140px;
     }
-    @media @mobile {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        .flex-1 {
-            -webkit-box-ordinal-group: 3;
-            -moz-box-ordinal-group: 3;
-            -webkit-order: 2;
-            -ms-flex-order: 2;
-            order: 2;
-            margin: 3em 0;
-        }
-        .flex-2 {
-            -webkit-box-ordinal-group: 2;
-            -moz-box-ordinal-group: 2;
-            -webkit-order: 1;
-            -ms-flex-order: 1;
-            order: 1;
-            min-height: 45px;
-            width: 100%;
-        }
-        .flex-3 {
-            -webkit-box-ordinal-group: 4;
-            -moz-box-ordinal-group: 4;
-            -webkit-order: 3;
-            -ms-flex-order: 3;
-            order: 3;
-            width: 100%;
+}
+
+.bk-header {
+    .flexbox {
+        @media @mobile {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            .flex-1 {
+                -webkit-box-ordinal-group: 3;
+                -moz-box-ordinal-group: 3;
+                -webkit-order: 2;
+                -ms-flex-order: 2;
+                order: 2;
+                margin: 3em 0;
+            }
+            .flex-2 {
+                -webkit-box-ordinal-group: 2;
+                -moz-box-ordinal-group: 2;
+                -webkit-order: 1;
+                -ms-flex-order: 1;
+                order: 1;
+                min-height: 45px;
+                width: 100%;
+            }
+            .flex-3 {
+                -webkit-box-ordinal-group: 4;
+                -moz-box-ordinal-group: 4;
+                -webkit-order: 3;
+                -ms-flex-order: 3;
+                order: 3;
+                width: 100%;
+            }
         }
     }
 }
-
 
 
 
@@ -1144,12 +1148,11 @@ a.blog-back-home {
             text-align: right;
             @media @tablet {
                 text-align: center;
+                margin-top: 25px;
             }
         }
         fieldset {
             input {
-                background: @color-swatch7;
-                border: none;
                 color: @color-swatch4;
                 height: 50px;
                 width: 50%;
@@ -1158,7 +1161,6 @@ a.blog-back-home {
                     color: @color-swatch5;
                 }
                 @media @tablet {
-                    margin-top: 25px;
                     width: 65%;
                 }
             }
@@ -1166,6 +1168,7 @@ a.blog-back-home {
                 color: @color-swatch1;
                 display: inline-block;
                 position: relative;
+                vertical-align: top;
                 height: 50px;
                 width: 65px;
             }
