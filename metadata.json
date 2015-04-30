@@ -1,7 +1,7 @@
 {
     "name":"Portland",
     "thumbnail":"portland.png",
-    "screenshot":"portland.png",
+    "screenshot":"portland-screenshot.jpg",
     "templateType":"ecommerce",
     "pageTypes": ["home"],
     "images":[
