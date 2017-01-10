@@ -730,6 +730,35 @@
     }
 }
 
+.advancedcontactform {
+    width: 70%;
+    @media @tablet {
+        padding: 0;
+        width: 100%;
+    }
+    label, select {
+        display: block;
+        width: 100%;
+    }
+    select {
+        font-size: bkscale(@font-swatch7-font-size, 0.96);
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        height: 40px;
+        border: 2px solid fade(@color-swatch5, 25%);
+        padding: 4px 35px 4px 12px;
+        background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
+        background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
+        background: linear-gradient(to bottom, white);
+        margin-bottom: 5px;
+        @media @tablet {
+            width: 100%;
+        }
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
 
 /* Ecommerce Basket Summary */
 @bp-checkout-compact: ~"only screen and (max-width : 820px)";
@@ -1216,7 +1245,8 @@ a.blog-back-home {
 /* Forms */
 
 .widget {
-    &.contactform {
+    &.contactform,
+    &.advancedcontactform {
         input, textarea {
             border: 2px solid fade(@color-swatch5, 25%);
         }
@@ -1287,6 +1317,21 @@ a.blog-back-home {
                 background-color: @font-swatch7-background-color-hover;
             }
         }
+    }
+}
+
+//Advanced Contact Form
+.advancedcontactform {
+    .select-wrap {
+        margin: 10px 0 0px;
+        display: inline-block;
+    }
+    .option-list {
+        margin: 0px 0 10px;
+    }
+    label {
+        width: 100%;
+        display: block;
     }
 }
 
