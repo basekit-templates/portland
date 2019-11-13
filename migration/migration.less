@@ -17,7 +17,7 @@
     margin-bottom: 10px;
   }
 
-  
+
   // Template wrapper (replace with corresponding template classes)
   [role="main"] .container {
     padding: 0;
@@ -58,10 +58,10 @@
   .empty-zone,
   #page-zones__main:empty,
   #page-zones__main > .widget:not(.row),
-  .row:not(.widget):not(.row--width-no-padding) .row__container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    max-width: @container-width;
+  .row:not(.row--width-no-padding) .row__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: ~"calc(1400px - 3rem)";
     width: ~"calc(100% - 3rem)";
   }
 
